@@ -8,5 +8,5 @@ syntax region rubyHereDocDashSQL matchgroup=Statement start=+<<-\z(SQL\)+ end=+\
 " Since Ruby 2.3
 syntax region rubyHereDocTildeSQL matchgroup=Statement start=+<<\~\z(SQL\)+ end=+\s\+\z1$+ contains=@SQL
 
-" Often used seen in the ActiveRecord source.
+" Often seen in the ActiveRecord source.
 syntax region rubyHereDocUnderscoreSQL matchgroup=Statement start=+<<_\z(SQL\)+ end=+\s\+\z1$+ contains=@SQL
