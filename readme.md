@@ -1,4 +1,4 @@
-## Syntax highlighting for SQL heredocs in Ruby
+## Syntax highlighting for SQL heredocs
 
 #### Installation
 
