@@ -1,4 +1,7 @@
-runtime! syntax/sql.vim
+" Store current syntax.
+let s:previous_syntax = b:current_syntax
+
+" Store the SQL syntax so it can be included below.
 unlet b:current_syntax
 syntax include @SQL syntax/sql.vim
 
@@ -14,3 +17,5 @@ syntax region rubyHereDocUnderscoreSQL matchgroup=Statement start=+<<_\z(SQL\)+ 
 " Sometime used for Redshift SQL queries.
 syntax region rubyHereDocRSSQL matchgroup=Statement start=+<<\z(RSSQL\)+ end=+^\z1$+ contains=@SQL
 syntax region rubyHereDocDashRSSQL matchgroup=Statement start=+<<-\z(RSSQL\)+ end=+\s\+\z1$+ contains=@SQL
+
+let b:current_syntax = s:previous_syntax
