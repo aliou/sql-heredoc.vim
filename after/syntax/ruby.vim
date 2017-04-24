@@ -1,5 +1,5 @@
 " sql-heredoc.vim - Syntax files for SQL heredocs.
-" Version: v0.1.0
+" Version: v0.2.0
 
 " Store current syntax.
 let s:previous_syntax = b:current_syntax
